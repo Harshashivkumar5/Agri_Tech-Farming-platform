@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AgroCulture: Blog Posts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/skel.min.js"></script>
+    <script src="../js/skel-layers.min.js"></script>
+    <script src="../js/init.js"></script>
+    <link rel="stylesheet" href="../css/skel.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style-xlarge.css" />
+    <style>
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .blog-post {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .blog-title {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .blog-meta {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .blog-content {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .blog-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .like-btn {
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .like-btn:hover {
+            color: #4CAF50;
+        }
+        .write-blog-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .write-blog-btn:hover {
+            background-color: #45a049;
+            color: white;
+        }
+    </style>
+</head>
+<body class="subpage">
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">AgroCulture</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../productMenu.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../market.html">Market</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../farming-knowledge.html">Knowledge</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../profileView.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <div class="blog-container">
+                <a href="../blogWrite.html" class="write-blog-btn">Write a Blog</a>
+                
+                <!-- Sample Blog Post 1 -->
+                <div class="blog-post">
+                    <h2 class="blog-title">Organic Farming: A Sustainable Future</h2>
+                    <div class="blog-meta">
+                        Posted by John Farmer on March 15, 2024
+                    </div>
+                    <div class="blog-content">
+                        <p>Organic farming is not just a method of cultivation; it's a philosophy that respects nature and promotes sustainable agriculture. In this blog post, we explore the benefits of organic farming practices and how they contribute to a healthier environment...</p>
+                    </div>
+                    <div class="blog-actions">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                            <span>42 Likes</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sample Blog Post 2 -->
+                <div class="blog-post">
+                    <h2 class="blog-title">The Art of Composting</h2>
+                    <div class="blog-meta">
+                        Posted by Sarah Green on March 10, 2024
+                    </div>
+                    <div class="blog-content">
+                        <p>Composting is nature's way of recycling. Learn how to create nutrient-rich compost for your garden using kitchen scraps and yard waste. This comprehensive guide covers everything from basic composting techniques to advanced methods...</p>
+                    </div>
+                    <div class="blog-actions">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                            <span>28 Likes</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sample Blog Post 3 -->
+                <div class="blog-post">
+                    <h2 class="blog-title">Seasonal Planting Guide</h2>
+                    <div class="blog-meta">
+                        Posted by Mike Harvest on March 5, 2024
+                    </div>
+                    <div class="blog-content">
+                        <p>Timing is everything in agriculture. This seasonal guide helps you plan your planting schedule for optimal growth and harvest. We cover spring, summer, fall, and winter crops, along with tips for each season...</p>
+                    </div>
+                    <div class="blog-actions">
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i>
+                            <span>35 Likes</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About AgroCulture</h3>
+                    <p>Connecting farmers directly with consumers for fresh, organic produce.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@agroculture.com<br>Phone: +1 234 567 890</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/skel.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Add like functionality
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                const count = this.querySelector('span');
+                const currentLikes = parseInt(count.textContent);
+                
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    count.textContent = (currentLikes + 1) + ' Likes';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    count.textContent = (currentLikes - 1) + ' Likes';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

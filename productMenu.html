@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AgroCulture: Digital Market</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="login.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+    <style>
+        .product-card {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .product-card h2 {
+            color: black;
+            margin: 10px 0;
+        }
+        .product-card blockquote {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html">Agri-Tech</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="myCart.html"><span class="glyphicon glyphicon-shopping-cart"> MYCART</a></li>
+                <li><a href="profileView.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                <li><a href="market.html"><span class="glyphicon glyphicon-grain"> DIGITAL-MARKET</a></li>
+                <li><a href="blogView.html"><span class="glyphicon glyphicon-comment"> BLOG</a></li>
+                <li><a href="weather.html"><span class="glyphicon glyphicon-cloud">WEATHER</a></li>
+                <li><a href="farming-knowledge.html"><span class="glyphicon">FARMING-KNOWLEDGE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main" class="wrapper style1 align-center">
+        <div class="container">
+            <h2>Welcome to digital market</h2>
+            <h3>Select Filter</h3>
+            <form id="filterForm">
+                <center>
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-2">
+                            <div class="form-group">
+                                <select class="form-control" id="type" name="type" required>
+                                    <option value="all">List All</option>
+                                    <option value="fruit">Fruit</option>
+                                    <option value="vegetable">Vegetable</option>
+                                    <option value="grain">Grains</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-primary">Go!</button>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </center>
+            </form>
+
+            <section id="two" class="wrapper style2 align-center">
+                <div class="container">
+                    <div class="row" id="productContainer">
+                        <!-- Sample Products -->
+                        <div class="col-md-4 product-card" data-category="fruit">
+                            <h2 class="title">Fresh Apples</h2>
+                            <a href="review.html?pid=1">
+                                <img src="images/productImages/apples.jpg" alt="Fresh Apples" class="image fit">
+                            </a>
+                            <blockquote>
+                                Type: Fruit<br>
+                                Price: 120 /-
+                            </blockquote>
+                        </div>
+
+                        <div class="col-md-4 product-card" data-category="vegetable">
+                            <h2 class="title">Organic Tomatoes</h2>
+                            <a href="review.html?pid=2">
+                                <img src="images/productImages/tomatoes.jpg" alt="Organic Tomatoes" class="image fit">
+                            </a>
+                            <blockquote>
+                                Type: Vegetable<br>
+                                Price: 80 /-
+                            </blockquote>
+                        </div>
+
+                        <div class="col-md-4 product-card" data-category="grain">
+                            <h2 class="title">Basmati Rice</h2>
+                            <a href="review.html?pid=3">
+                                <img src="images/productImages/rice.jpg" alt="Basmati Rice" class="image fit">
+                            </a>
+                            <blockquote>
+                                Type: Grains<br>
+                                Price: 150 /-
+                            </blockquote>
+                        </div>
+
+                        <div class="col-md-4 product-card" data-category="fruit">
+                            <h2 class="title">Sweet Mangoes</h2>
+                            <a href="review.html?pid=4">
+                                <img src="images/productImages/mangoes.jpg" alt="Sweet Mangoes" class="image fit">
+                            </a>
+                            <blockquote>
+                                Type: Fruit<br>
+                                Price: 200 /-
+                            </blockquote>
+                        </div>
+
+                        <div class="col-md-4 product-card" data-category="vegetable">
+                            <h2 class="title">Fresh Potatoes</h2>
+                            <a href="review.html?pid=5">
+                                <img src="images/productImages/potatoes.jpg" alt="Fresh Potatoes" class="image fit">
+                            </a>
+                            <blockquote>
+                                Type: Vegetable<br>
+                                Price: 60 /-
+                            </blockquote>
+                        </div>
+
+                        <div class="col-md-4 product-card" data-category="grain">
+                            <h2 class="title">Wheat Flour</h2>
+                            <a href="review.html?pid=6">
+                                <img src="images/productImages/wheat.jpg" alt="Wheat Flour" class="image fit">
+                            </a>
+                            <blockquote>
+                                Type: Grains<br>
+                                Price: 90 /-
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-distributed" style="background-color:black" id="aboutUs">
+        <center>
+            <h1 style="font: 35px calibri;">About Us</h1>
+        </center>
+        <div class="footer-left">
+            <h3 style="font-family: 'Times New Roman', cursive;">Agri-Tech &copy; </h3>
+            <p style="font-size:20px;color:white">Your product Our market !!!</p>
+            <br />
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p style="font-size:20px">Agri-Tech<span>Bangalore</span></p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p style="font-size:20px">8310807150</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p style="font-size:20px"><a href="mailto:agritech@gmail.com" style="color:white">agri-tech.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about" style="color:white">
+                <span style="font-size:20px"><b>About Agri-Tech</b></span>
+                Agri-Tech is e-commerce trading platform for grains & grocerries...
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i style="margin-left: 0;margin-top:5px;" class="fa fa-facebook"></i></a>
+                <a href="#"><i style="margin-left: 0;margin-top:5px" class="fa fa-instagram"></i></a>
+                <a href="#"><i style="margin-left: 0;margin-top:5px" class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('filterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedType = document.getElementById('type').value;
+            const products = document.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                if (selectedType === 'all' || product.dataset.category === selectedType) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
